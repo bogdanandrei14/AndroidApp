@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieEditFragment">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:orientation="vertical" >
+<!--        android:gravity="center">-->
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Nume film"
+            android:textSize="20sp">
+        </TextView>
+        <EditText
+            android:id="@+id/movie_nume"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@layout/rounded_border_edittext"
+            android:text=""
+            android:paddingLeft="6dp"
+            android:hint="Numele filmului" />
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Gen film"
+            android:textSize="20sp">
+        </TextView>
+        <EditText
+            android:id="@+id/movie_gen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@layout/rounded_border_edittext"
+            android:text=""
+            android:paddingLeft="6dp"
+            android:hint="Genul filmului" />
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Anul aparitiei"
+            android:textSize="20sp">
+        </TextView>
+        <EditText
+            android:id="@+id/movie_an_aparitie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@layout/rounded_border_edittext"
+            android:text=""
+            android:paddingLeft="6dp"
+            android:hint="Anul aparitiei" />
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Durata film"
+            android:textSize="20sp">
+        </TextView>
+        <EditText
+            android:id="@+id/movie_durata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@layout/rounded_border_edittext"
+            android:text=""
+            android:paddingLeft="6dp"
+            android:hint="Durata" />
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Descriere film"
+            android:textSize="20sp">
+        </TextView>
+        <EditText
+            android:id="@+id/movie_descriere"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@layout/rounded_border_edittext"
+            android:text=""
+            android:paddingLeft="6dp"
+            android:hint="Descriere" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:tint="@color/black"
+        app:maxImageSize="40dp"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+</FrameLayout>
