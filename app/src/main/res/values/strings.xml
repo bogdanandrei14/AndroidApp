@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">AndroidApp</string>
+    <string name="app_name">MovieBox</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="movie_list_fragment_label">Movie List</string>
+    <string name="movie_edit_fragment_label">Movie Edit</string>
+    <string name="edit">Edit</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="movie_list_fragment">Movie list fragment</string>
+    <string name="movie_edit_fragment">Movie edit fragment</string>
 </resources>
