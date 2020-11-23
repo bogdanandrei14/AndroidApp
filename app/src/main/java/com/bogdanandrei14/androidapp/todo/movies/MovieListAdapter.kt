@@ -1,4 +1,4 @@
-package com.bogdanandrei14.androidapp
+package com.bogdanandrei14.androidapp.todo.movies
 
 import android.os.Bundle
 import android.util.Log
@@ -9,6 +9,10 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.bogdanandrei14.androidapp.R
+import com.bogdanandrei14.androidapp.core.TAG
+import com.bogdanandrei14.androidapp.todo.data.Movie
+import com.bogdanandrei14.androidapp.todo.movie.MovieEditFragment
 import kotlinx.android.synthetic.main.view_movie.view.*
 
 class MovieListAdapter (
@@ -26,7 +30,7 @@ class MovieListAdapter (
         onMovieClick = View.OnClickListener { view ->
             val movie = view.tag as Movie
             fragment.findNavController().navigate(R.id.MovieEditFragment, Bundle().apply {
-                putString(MovieEditFragment.MOVIE_ID, movie.id)
+                putString(MovieEditFragment.MOVIE_ID, movie._id)
             })
         }
     }

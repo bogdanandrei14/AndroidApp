@@ -1,4 +1,4 @@
-package com.bogdanandrei14.androidapp
+package com.bogdanandrei14.androidapp.core
 
 val Any.TAG: String
     get() {
